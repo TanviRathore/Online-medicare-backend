@@ -1,0 +1,16 @@
+127.0.0.1 - - [04/Mar/2022:22:43:11 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:13 +0530] "GET /Medicare/ HTTP/1.1" 200 5333
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:13 +0530] "GET /Medicare/style.css HTTP/1.1" 200 846
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:13 +0530] "GET /Medicare/assets/Logo%20500x500%20px.jpeg HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:13 +0530] "GET /Medicare/assets/Logo%20(2).png HTTP/1.1" 404 1054
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:13 +0530] "GET /Medicare/assets/logo$.png HTTP/1.1" 404 1044
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:18 +0530] "GET /Medicare/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:18 +0530] "GET /Medicare/assets/Logo%20(2).png HTTP/1.1" 404 1054
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:43:18 +0530] "GET /Medicare/assets/Logo%20500x500%20px.jpeg HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:44:36 +0530] "GET /Medicare/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:44:36 +0530] "GET /Medicare/assets/Logo%20(2).png HTTP/1.1" 200 8429
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:44:36 +0530] "GET /Medicare/assets/Logo%20500x500%20px.jpeg HTTP/1.1" 200 13974
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:44:40 +0530] "GET /Medicare/signup.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:44:41 +0530] "GET /Medicare/ClinicSignup.html HTTP/1.1" 200 6136
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:45:24 +0530] "GET /Medicare/ClinicSignUp.jsp?cname=Tanvi+Rathore&docname=Tanvi+Rathore&speciality=rtt&email=ojas%40gmail.com&pwd=Tanvi_2001&contact=9575271207&add=773%2F15+Samajwadi+Indira+Nagar&fee=500&facility=sdgfgg&help=ggfdss&location=344444&time=auiduju&img=1.png HTTP/1.1" 500 2855
+0:0:0:0:0:0:0:1 - - [04/Mar/2022:22:45:24 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
