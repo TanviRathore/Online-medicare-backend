@@ -10,7 +10,8 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <context-param>
-  	<param-name>file-upload</param-name>
-  	<param-value>D:\Online-Medicare\Medicare\WebContent\images</param-value>
+    <description>Location to store image</description>
+    <param-name>file-upload</param-name>
+    <param-value>E:\Online-medicare\Medicare\WebContent\images\</param-value>
   </context-param>
 </web-app>

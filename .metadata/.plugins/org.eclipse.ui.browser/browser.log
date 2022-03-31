@@ -12,3 +12,6 @@ Mar 04, 2022 22:43:15.10 [10120:8648:0304/224315.071:ERROR:chrome_browser_main_e
 Mar 04, 2022 22:43:15.10 [10120:8648:0304/224315.071:ERROR:chrome_browser_main_extra_parts_metrics.cc(235)] START: GetDefaultBrowser(). If you don't see the END: message, this is crbug.com/1216328.
 Mar 04, 2022 22:43:15.10 [10120:8648:0304/224315.071:ERROR:chrome_browser_main_extra_parts_metrics.cc(239)] END: GetDefaultBrowser()
 Mar 04, 2022 22:43:15.21 [10120:184:0304/224315.211:ERROR:device_event_log_impl.cc(214)] [22:43:15.217] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+
+Mar 19, 2022 20:16:05.80 NEW SESSION
+Mar 19, 2022 20:16:05.80 [392:8284:0319/201605.801:ERROR:device_event_log_impl.cc(214)] [20:16:05.801] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.

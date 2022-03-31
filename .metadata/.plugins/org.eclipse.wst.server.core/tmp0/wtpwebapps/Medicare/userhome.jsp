@@ -1,5 +1,4 @@
  <%String userName = (String)session.getAttribute("username"); %>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
