@@ -80,3 +80,12 @@
 0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:12:02 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Admin%40123 HTTP/1.1" 404 1026
 0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:12:02 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Admin%40123 HTTP/1.1" 404 1026
 0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:12:02 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Admin%40123 HTTP/1.1" 404 1026
+127.0.0.1 - - [12/Apr/2022:14:12:25 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:12:25 +0530] "GET /Medicare/ HTTP/1.1" 200 3060
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:12:29 +0530] "GET /Medicare/aLogin.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:13:14 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Adi40003 HTTP/1.1" 200 2760
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:15:06 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Adi40003 HTTP/1.1" 200 2760
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:15:07 +0530] "GET /Medicare/ASignin?email=aditya%40gmail.com&password=Adi40003 HTTP/1.1" 200 2760
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:15:16 +0530] "GET /Medicare/ASignin?email=tanvi%40gmail.com&password=Tanvi2001 HTTP/1.1" 200 2785
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:15:37 +0530] "GET /Medicare/ASignin?email=admin%40gmail.com&password=Admin%40123 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:14:15:37 +0530] "GET /Medicare/ahome.html HTTP/1.1" 200 3049
