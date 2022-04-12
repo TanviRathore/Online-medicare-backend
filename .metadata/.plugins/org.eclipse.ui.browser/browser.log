@@ -15,3 +15,12 @@ Mar 04, 2022 22:43:15.21 [10120:184:0304/224315.211:ERROR:device_event_log_impl.
 
 Mar 19, 2022 20:16:05.80 NEW SESSION
 Mar 19, 2022 20:16:05.80 [392:8284:0319/201605.801:ERROR:device_event_log_impl.cc(214)] [20:16:05.801] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+
+Apr 11, 2022 20:50:18.20 NEW SESSION
+Apr 11, 2022 20:50:18.20 [1408:4716:0411/205018.201:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 0.
+Apr 11, 2022 20:50:18.24 [1408:4716:0411/205018.201:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 1, got 0.
+Apr 11, 2022 20:50:18.24 [1408:4716:0411/205018.201:ERROR:device_event_log_impl.cc(214)] [20:50:18.200] USB: usb_device_win.cc:96 Failed to read descriptors from \\?\usb#vid_0000&pid_6800#6&1990268&0&1#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+Apr 11, 2022 20:50:18.31 [1408:4716:0411/205018.312:ERROR:device_event_log_impl.cc(214)] [20:50:18.311] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+Apr 11, 2022 20:59:34.73 [1408:10040:0411/205934.739:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 11, 2022 20:59:35.24 [1408:10040:0411/205935.247:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 11, 2022 20:59:38.81 [1408:4716:0411/205938.818:ERROR:device_event_log_impl.cc(214)] [20:59:38.818] USB: usb_service_win.cc:260 Failed to get device driver name: Element not found. (0x490)

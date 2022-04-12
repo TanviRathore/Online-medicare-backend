@@ -29,19 +29,21 @@ public class Signup extends HttpServlet {
 		String contact = request.getParameter("Contact");
 		long cont = Long.parseLong(contact);
 		String add = request.getParameter("address");
-		String cordinates = request.getParameter("Cordinates");
+		String lon = request.getParameter("lon");
+		String lat = request.getParameter("lat");
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Medicare","root","1607");
-			String qr = "insert into user values(?,?,?,?,?,?,?)";
+			String qr = "insert into user values(?,?,?,?,?,?,?,?)";
 			PreparedStatement ps = con.prepareStatement(qr);
 			ps.setString(1, name);
 			ps.setString(2, email);
 			ps.setString(3, pwd);
-			ps.setString(4,cordinates );
-			ps.setString(5, add);
-			ps.setString(6, userName);
-			ps.setLong(7, cont);
+			ps.setString(4, add);
+			ps.setString(5, userName);
+			ps.setLong(6, cont);
+			ps.setString(7, lat);
+			ps.setString(8, lon);
 			int i = ps.executeUpdate();
 			if(i>0)
 			{

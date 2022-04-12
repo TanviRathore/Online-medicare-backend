@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<%@include file="db.jsp" %> 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="javax.servlet.http.HttpSession"%>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,60 +46,52 @@
             </div>
         </nav>
     </header>
-
+    
     <main class="conatiner m-5">
-        <div class="row">
-            <div class=" col-3 gap-5 mt-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Shri Sai Clinic</h5>
-                      <img class="card-img-top" src="./assets/Logo 500x500 px.jpeg" alt="Card image cap">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="page.html" class="btn text-white">Go to clinic</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-3  gap-5 mt-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Dr. Agrawal's Clinic</h5>
-                      <img class="card-img-top" src="./assets/Logo 500x500 px.jpeg" alt="Card image cap">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="page.html" class="btn text-white">Go to clinic</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-3  gap-5 mt-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Bafna Hospital</h5>
-                      <img class="card-img-top" src="./assets/Logo 500x500 px.jpeg" alt="Card image cap">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="page.html" class="btn text-white">Go to clinic</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-3  gap-5 mt-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Aditya Hospital</h5>
-                      <img class="card-img-top" src="./assets/Logo 500x500 px.jpeg" alt="Card image cap">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="page.html" class="btn text-white">Go to clinic</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-3  gap-5 mt-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Aditya Hospital</h5>
-                      <img class="card-img-top" src="./assets/Logo 500x500 px.jpeg" alt="Card image cap">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="page.html" class="btn text-white">Go to clinic</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    	<div class="row">
+
+	<%
+	
+	String city = request.getParameter("city");
+	String qr = "select * from medFac where address like '%"+city+"%'";
+	
+	PreparedStatement ps = con.prepareStatement(qr);
+	
+	ResultSet rs = ps.executeQuery();
+	 if(rs.next())
+	 {
+		 do{
+			 String cname = rs.getString("clinicName");
+			 String img = rs.getString("img");
+			 String add = rs.getString("address");
+			 String id = rs.getString("id");
+			 String time = rs.getString("time");
+			 %>
+		
+	            <div class=" col-3 gap-5 mt-4">
+	                <div class="card">
+	                    <div class="card-body">
+	                      <h5 class="card-title"><%=cname%></h5>
+	                      <img class="card-img-top" <%out.println("src=./images/"+img) ;%> alt="Card image cap">
+	                      <p class="card-text">
+	                      	<%=add %><br>
+	                      	from: <%=time %>
+	                      </p>
+	                      <a <%out.println("href=page.jsp?id="+id); %> class="btn text-white">Go to clinic</a>
+	                    </div>
+	                </div>
+	            </div>
+			 
+			 <% 
+		 }while(rs.next());
+	 }
+	 else{
+		 out.println("No data found");
+		 out.println("<a href='index.jsp'>Go to home page</a>");
+	 }
+	
+	%>
+		</div>
     </main>
 
 </body>

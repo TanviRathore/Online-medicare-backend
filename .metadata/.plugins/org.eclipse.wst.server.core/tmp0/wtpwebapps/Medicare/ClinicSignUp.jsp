@@ -41,23 +41,25 @@
 <%@page  errorPage="error.jsp" %>
 
 <%
-String cname = request.getParameter("cname");
-String docname = request.getParameter("docname");
-String speciality = request.getParameter("speciality");
-String email = request.getParameter("email");
-session.setAttribute("email", email);
-String pwd = request.getParameter("pwd");
-String contact = request.getParameter("contact");
-long cont = Long.parseLong(contact);
-String add = request.getParameter("add");
-String fees = request.getParameter("fee");
-int fee = Integer.parseInt(fees);
-String facility = request.getParameter("facility");
-String help = request.getParameter("help");
-String location = request.getParameter("location");
-String time = request.getParameter("time");
+	String cname = request.getParameter("cname");
+	String docname = request.getParameter("docname");
+	String speciality = request.getParameter("speciality");
+	String email = request.getParameter("email");
+	session.setAttribute("email", email);
+	String pwd = request.getParameter("pwd");
+	String contact = request.getParameter("contact");
+	long cont = Long.parseLong(contact);
+	String add = request.getParameter("add");
+	String fees = request.getParameter("fee");
+	int fee = Integer.parseInt(fees);
+	String facility = request.getParameter("facility");
+	String help = request.getParameter("help");
+	String lon = request.getParameter("lon");
+	String lat = request.getParameter("lat");
+	String time = request.getParameter("time");
+	String deg = request.getParameter("deg");
    
-   String qr = "insert into medFac (clinicName, name, special, email, pwd, contact, fee, facilities, help, location, time, address) values(?,?,?,?,?,?,?,?,?,?,?,?)";
+   String qr = "insert into medFac (clinicName, name, special, email, pwd, fee, facilities, help, time, address,contact, degree, lon, lat) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
    
    PreparedStatement ps = con.prepareStatement(qr);
    
@@ -66,13 +68,15 @@ String time = request.getParameter("time");
    ps.setString(3,speciality);
    ps.setString(4, email);
    ps.setString(5, pwd);
-   ps.setLong(6,cont);
-   ps.setInt(7, fee);
-   ps.setString(8,facility);
-   ps.setString(9, help);
-   ps.setString(10, location);
-   ps.setString(11, time);
-   ps.setString(12, add);
+   ps.setInt(6, fee);
+   ps.setString(7,facility);
+   ps.setString(8, help);
+   ps.setString(9, time);
+   ps.setString(10, add);
+   ps.setLong(11, cont);
+   ps.setString(12, deg);
+   ps.setString(13, lon);
+   ps.setString(14, lat);
    
   int i = ps.executeUpdate();
 %>
