@@ -29,7 +29,7 @@
             </div>
             <div class="d-flex flex-row justify-content-between">
                 <div style="align-items: center; padding: 10px;">
-                    <a class=" text-white" href="Profile.html" style="margin: 10px;">
+                    <a class=" text-white" href="Profile.jsp" style="margin: 10px;">
                         <%=userName %>
                     </a>
                 </div>

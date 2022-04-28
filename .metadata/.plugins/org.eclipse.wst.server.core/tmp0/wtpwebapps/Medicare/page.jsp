@@ -44,7 +44,7 @@
                  <%
                 }else{                 
                  %>
-                  <a class=" text-white" href="Profile.html" style="margin: 10px;">
+                  <a class=" text-white" href="Profile.jsp" style="margin: 10px;">
                         <%=userName %>
                    </a>
                    <div>
