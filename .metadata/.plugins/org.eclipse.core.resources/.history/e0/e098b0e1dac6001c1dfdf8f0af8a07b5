@@ -47,6 +47,13 @@
 
 	<%
 	
+	Cookie ck[] = request.getCookies();
+	
+	double longitude = Double.parseDouble( ck[0].getValue());
+	double latitude = Double.parseDouble(ck[1].getValue());
+	
+	double new_latitude  = latitude  + 0.009009;
+	double new_longitude = longitude + 0.009009;
 	
 	String qr = "select * from medFac";
 	
@@ -90,13 +97,3 @@
 
 </body>
 </html>
-
-<!-- 
-	Cookie ck[] = request.getCookies();
-	
-	double longitude = Double.parseDouble( ck[0].getValue());
-	double latitude = Double.parseDouble(ck[1].getValue());
-	
-	double new_latitude  = latitude  + 0.009009;
-	double new_longitude = longitude + 0.009009;
-	-->

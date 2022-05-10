@@ -18,6 +18,14 @@ String pwd = request.getParameter("password");
 			session.setAttribute("id", email);
 			String userName = rs.getString("userName");
 			session.setAttribute("username", userName);
+			String lat = rs.getString("lat");
+			String lon = rs.getString("lon");
+			Cookie ck = new Cookie("lon",lon);
+			Cookie ck1 = new Cookie("lat",lat);
+			
+			response.addCookie(ck);
+			response.addCookie(ck1);
+			
 			response.sendRedirect("userhome.jsp");
 		}while(rs.next());
 	}

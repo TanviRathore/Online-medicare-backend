@@ -47,22 +47,7 @@
 
 	<%
 	
-	/*String qr1 = "select location from user where userName=?";
-	PreparedStatement ps1 = con.prepareStatement(qr1);
-	ps1.setString(1, userName);
-	ResultSet rs1 = ps1.executeQuery();
-	if(rs.next())
-	 {
-		 do{
-			 String location=rs.getString("location");
-			 String loc[] = location.split(", ");
-			 
-			 String lon = loc[0];
-			 String lat = loc[1];
-			 
-		 }while(rs.next());
 	
-	*/
 	String qr = "select * from medFac";
 	
 	PreparedStatement ps = con.prepareStatement(qr);
@@ -105,3 +90,13 @@
 
 </body>
 </html>
+
+<!-- 
+	Cookie ck[] = request.getCookies();
+	
+	double longitude = Double.parseDouble( ck[0].getValue());
+	double latitude = Double.parseDouble(ck[1].getValue());
+	
+	double new_latitude  = latitude  + 0.009009;
+	double new_longitude = longitude + 0.009009;
+	-->
